@@ -1,0 +1,28 @@
+canvas = document.getElementById("myCanvas"); 
+ctx= canvas.getContext("2d"); 
+color = "red"; ctx.beginPath(); 
+ctx.strokeStyle = color; 
+ctx.lineWidth = 2; 
+ctx.arc(200, 200, 40 ,0 , 2*Math.PI); 
+ctx.stroke(); 
+color = "blue"; ctx.beginPath(); 
+ctx.strokeStyle = color; 
+ctx.lineWidth = 2; 
+ctx.arc(250, 200, 40 ,0 , 2*Math.PI); 
+ctx.stroke();
+color = "green"; ctx.beginPath(); 
+ctx.strokeStyle = color; 
+ctx.lineWidth = 2; 
+ctx.arc(300, 200, 40 ,0 , 2*Math.PI); 
+ctx.stroke();  
+color = "black"; ctx.beginPath(); 
+ctx.strokeStyle = color; 
+ctx.lineWidth = 2; 
+ctx.arc(230, 250, 40 ,0 , 2*Math.PI); 
+ctx.stroke(); 
+color = "yellow"; ctx.beginPath(); 
+ctx.strokeStyle = color; 
+ctx.lineWidth = 2; 
+ctx.arc(280, 250, 40 ,0 , 2*Math.PI); 
+ctx.stroke(); 
+function clearArea() { ctx.clearRect(0, 0, canvas.width, canvas.height); }
